@@ -119,6 +119,7 @@ async function run(): Promise<void> {
 
     let licenseJson = await dumpLicenses({
         start: inputDir,
+        production: true
     })
 
     licenseJson = cleanLicenses(licenseJson)
