@@ -120,7 +120,7 @@ async function run(): Promise<void> {
     let licenseJson = await dumpLicenses({
         start: inputDir,
         production: true,
-        omitVersion: true
+        omitVersion: false
     })
 
     licenseJson = cleanLicenses(licenseJson)
